@@ -1,0 +1,21 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "npm build with testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "nodemon --watch input --watch spec --exec run-s lint --exec run-s test",
+    "lint": "echo JSHINT OUTPUT: && jshint --reporter=node_modules/jshint-stylish input spec",
+    "test": "echo JASMINE OUTPUT: && jasmine"
+  },
+  "author": "Evert Island",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "nodemon": "^1.9.2",
+    "npm-run-all": "^2.1.1"
+  }
+}

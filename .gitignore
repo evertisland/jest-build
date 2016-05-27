@@ -1,0 +1,3 @@
+#Dear Git, be so kind as to ignore the following:
+node_modules/
+output/
