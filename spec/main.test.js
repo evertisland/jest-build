@@ -1,8 +1,11 @@
 (function() {
     'use strict';
-    describe('Test suite', function () {
+
+    var main = require('../input/main');
+
+    describe('Jasmine', function () {
         it('works', function () {
-            expect(true).toBe(true);
+            expect(main.hello()).toBe('hello jasmine');
         });
     });
 }());

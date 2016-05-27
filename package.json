@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run watch",
-    "watch": "nodemon --watch input --watch spec --exec run-s lint --exec run-s test",
-    "lint": "echo JSHINT OUTPUT: && jshint --reporter=node_modules/jshint-stylish input spec",
-    "test": "echo JASMINE OUTPUT: && jasmine"
+    "watch": "nodemon --watch input --watch spec --exec run-s -s lint --exec run-s -s test",
+    "lint": "echo JSHINT OUTPUT: & jshint --reporter=node_modules/jshint-stylish input spec",
+    "test": "echo JASMINE OUTPUT: & jasmine"
   },
   "author": "Evert Island",
   "license": "ISC",
