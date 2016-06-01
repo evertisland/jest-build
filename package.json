@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run watch",
-    "watch": "nodemon --watch input --watch spec --exec run-s -s lint --exec run-s -s test",
-    "lint": "echo JSHINT OUTPUT: & jshint --reporter=node_modules/jshint-stylish input spec",
-    "test": "echo JASMINE OUTPUT: & jasmine"
+    "watch": "nodemon --watch input --watch __tests__ --exec run-s -s lint --exec run-s -s test",
+    "lint": "echo JSHINT OUTPUT: & jshint --reporter=node_modules/jshint-stylish input __tests__",
+    "test": "echo JEST OUTPUT: & jest"
   },
   "author": "Evert Island",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^2.4.1",
+    "angular": "^1.5.6",
+    "angular-mocks": "^1.5.6",
+    "jest-cli": "^12.1.1",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "nodemon": "^1.9.2",
